@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class='theme-three'>
+  <div class="container">
+    <div class="header">
+      <p class='logo'>calc</p>
+      <div class="theme-switch-wrapper">
+        <p>THEME</p>
+        <div class="theme-switch">
+          <div class="labels">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div class="switch">
+            <div class="indicator"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen">
+      <p previousOperand class='sub-display'></p>
+      <p currentOperand class='display'>0</p>
+    </div>
+    <div class="keypad">
+      <div class="keys">
+        <p numberBtn class='key-3'>7</p>
+        <p numberBtn class='key-3'>8</p>
+        <p numberBtn class='key-3'>9</p>
+        <p deleteBtn class='key-1'>DEL</p>
+        <p numberBtn class='key-3'>4</p>
+        <p numberBtn class='key-3'>5</p>
+        <p numberBtn class='key-3'>6</p>
+        <p operationBtn class='key-3'>+</p>
+        <p numberBtn class='key-3'>1</p>
+        <p numberBtn class='key-3'>2</p>
+        <p numberBtn class='key-3'>3</p>
+        <p minusBtn class='key-3'>-</p>
+        <p numberBtn class='key-3'>.</p>
+        <p numberBtn class='key-3'>0</p>
+        <p operationBtn class='key-3'>/</p>
+        <p operationBtn class='key-3'>x</p>
+        <p clearBtn class='large-btn key-1'>RESET</p>
+        <p equalsBtn class='large-btn key-2'>=</p>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+  <script>
+    const toggle = document.querySelector('.switch')
+    const body = document.body
+
+    toggle.addEventListener('click', () => {
+      if (body.classList.contains('theme-one')) {
+        body.classList.remove('theme-one')
+        body.classList.add('theme-two')
+      } else if (body.classList.contains('theme-two')) {
+        body.classList.remove('theme-two')
+        body.classList.add('theme-three')
+      } else if (body.classList.contains('theme-three')) {
+        body.classList.remove('theme-three')
+        body.classList.add('theme-one')
+      }
+    })
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
