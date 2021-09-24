@@ -1,4 +1,4 @@
-# Tip calculator App
+# Calculator App
 
 See The Live Site: [Tip Calculator](https://aldothedev.github.io/Calculator/)
 
