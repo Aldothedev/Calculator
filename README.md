@@ -1,4 +1,4 @@
-# Frontend Mentor - Tip calculator app solution
+# Tip calculator App
 
 See The Live Site: [Tip Calculator](https://aldothedev.github.io/Calculator/)
 
